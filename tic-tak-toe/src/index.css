@@ -1,3 +1,9 @@
+body{
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 nav{
    
    /* width:100vw; */
@@ -24,12 +30,12 @@ nav{
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  /* position: relative; */
   z-index: 0;
 }
 
 #brand{
-  font-style: normal;
+  
   display: flex;
   width:20vw;
   height:10vh;
@@ -51,16 +57,18 @@ nav{
   height:70vh;
   z-index: 1;
   box-shadow: 10px 10px 80px pink;
+  /* margin-top:20vh; */
   /* box-shadow: 10px 10px white; */
   /* background-color:transparent; */
   border-radius: 20px;
-  position: absolute;
-  top:0vh;
-  display: flex;
+  /* position: absolute; */
+  /* top:0vh; */
+  position: relative;
+  /* display: flex; */
   /* flex-direction: column; */
-  justify-content: space-around;
+  /* justify-content: space-around; */
 
-  align-items: center;
+  /* align-items: center; */
 }
 #board-left{
   display: flex;
@@ -72,6 +80,10 @@ nav{
   border-radius: 10px;
   height: 80%;
   background-color: black;
+  
+  position: absolute;
+  left:3vw;
+  top:13vh;
 }
 #board-right button{
   /* position: absolute; */
@@ -117,16 +129,18 @@ nav{
 #board-right{
    display: flex;
    flex-direction: column;
+   right:3vw;
+   top:13vh;
    /* justify-content: space-around; */
    align-items: center;
    width:40%;
    height:80%;
    background-color: black;
-   position: relative;
+   position: absolute;
 }
 img{
-  width:60px;
-  height:60px;
+  width:50px;
+  height:50px;
 }
 #main-body{
   padding:0;
@@ -196,4 +210,25 @@ img{
   cursor: pointer;
   /* top:50px; */
   /* box-shadow: 2px -2px 15px rgb(244, 243, 246); */
+}
+
+#result{
+  color:rgb(239, 220, 14);
+  /* background-color: rgb(240, 240, 245); */
+  position: absolute;
+  top:0vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:54vw;
+  height:10vh;
+  left:3vw;
+  right:3vw;
+   background-color: black;
+}
+#result img{
+  width:40px;
+  height:40px;
+  margin-left:10px;
+  margin-right:10px;
 }
