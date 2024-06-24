@@ -1,0 +1,199 @@
+nav{
+   
+   /* width:100vw; */
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   /* height:30vh; */
+   font-size: 3vw;
+
+  font-style: oblique;
+
+  margin: 0;
+  padding: 0;
+  height:20vh;
+  width:100vw;
+  color:white;
+  background-color: rgb(10, 9, 10);
+}
+#body{
+  background: url("https://media.istockphoto.com/id/91621630/photo/tic-tac-toe-game.jpg?s=612x612&w=0&k=20&c=KYxukGul6TXNbsTCKZW-TBWH5FmAPyQA0t3wKi5iC1I=")  ;
+  ;
+  width:100vw;
+  height:70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+}
+
+#brand{
+  font-style: normal;
+  display: flex;
+  width:20vw;
+  height:10vh;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 3vw;
+  color: rgb(12, 243, 223);
+  border: 2px pink solid;
+  border-radius: 10px;
+}
+
+
+#brand p {
+  font-size: 2vw;
+}
+
+#game-area{
+  width:60vw;
+  height:70vh;
+  z-index: 1;
+  box-shadow: 10px 10px 80px pink;
+  /* box-shadow: 10px 10px white; */
+  /* background-color:transparent; */
+  border-radius: 20px;
+  position: absolute;
+  top:0vh;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+
+  align-items: center;
+}
+#board-left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: beige; */
+  width:40%;
+  border-radius: 10px;
+  height: 80%;
+  background-color: black;
+}
+#board-right button{
+  /* position: absolute; */
+
+  /* margin-top: 50vh; */
+  /* margin-left:25vw; */
+  width:250px;
+  height: 50px;
+  border-radius: 10px;
+  position: absolute;
+  font-weight: bolder;
+  /* color: white; */
+  /* background-color: rgb(3, 228, 37); */
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-board{
+  background-color: white;
+  width:229px;
+  height:229px;
+  background-color: rgb(236, 205, 6);
+  display: flex;
+  flex: 0 1 80px;
+  flex-wrap: wrap;
+  gap: 2px;
+  
+  /* margin-top: 100px; */
+}
+.box{
+  width:75px ;
+  height:75px;
+  background-color:black;
+  /* margin-left:2px;
+  margin-bottom: 3px; */
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#board-right{
+   display: flex;
+   flex-direction: column;
+   /* justify-content: space-around; */
+   align-items: center;
+   width:40%;
+   height:80%;
+   background-color: black;
+   position: relative;
+}
+img{
+  width:60px;
+  height:60px;
+}
+#main-body{
+  padding:0;
+  margin: 0;
+  width:98vw;
+  height:100vh;
+  background-color: black;
+}
+/* .pink-btn{
+  background-color: black;
+  border: 2px solid rgb(238, 34, 249);
+  
+  /* text-shadow: 2px 2px black; */
+  /* color:pink; */
+/* } */ 
+.green-btn{
+  background-color: rgb(35, 133, 53);
+  color: white;
+  border: none;
+  cursor:pointer;
+  /* margin-top: 70px;
+   */
+   top:220px;
+}
+.green-btn:hover{
+  background-color: black;
+  color:rgb(6, 198, 77);
+  border: 2px solid rgb(6, 198, 77);
+}
+.btn1{
+  background-color: black;
+  border: 2px solid rgb(238, 34, 249);
+  
+  /* text-shadow: 2px 2px black; */
+  color:pink;
+  /* margin-top: 30px; */
+  top:50px;
+  cursor: pointer;
+}
+.friend{
+  /* margin-top: 25px;
+   */
+   top:120px;
+   background-color: black;
+   border: 2px solid rgb(238, 34, 249);
+   
+   /* text-shadow: 2px 2px black; */
+   color:pink;
+   cursor: pointer;
+}
+.pink-btn:hover{
+  box-shadow: 5px 5px 20px  pink;
+}
+.bot-off{
+  background-color: rgb(7, 51, 245);
+  color:white;
+  top:50px;
+  border: none;
+  cursor: pointer;
+  /* box-shadow: 2px -2px 15px rgb(244, 243, 246); */
+}
+.friend-off{
+  top:120px;
+  background-color: rgb(7, 51, 245);
+  color:white;
+  border: none;
+  cursor: pointer;
+  /* top:50px; */
+  /* box-shadow: 2px -2px 15px rgb(244, 243, 246); */
+}
