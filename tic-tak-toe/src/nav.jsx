@@ -6,7 +6,7 @@ const Nav = () => {
       <nav>
         <h1>Tic Tac Toe</h1>
         
-        <h10 id="brand"><p>by</p> GameHub</h10>
+        <h10 id="brand"><p>by</p> <a href="https://x.com/kuldeep_106">@Kuldeep</a></h10>
       </nav>
     </div>
   )

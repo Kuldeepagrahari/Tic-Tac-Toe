@@ -11,7 +11,7 @@ const Board = () => {
     const [botVal, setBotVal] = useState("Play with our Bot")
     const [flag, setFlag] = useState("circle")
     const [lock, setLock] = useState(false)
-    const [gameResult, setGameResult] = useState("")
+    const [gameResult, setGameResult] = useState("just click on your best box !")
 
     function checkWin(){
         if(friendVal === "Friend v/s Friend ON!")
@@ -41,8 +41,7 @@ const Board = () => {
         }}
        
 
-
-        
+      
        
     }
     function winEffect(winner){
@@ -100,7 +99,11 @@ const Board = () => {
        for ( var i = 0 ; i  < 9; i++ ){
             if ( data[i] === 'o' || data[i] === 'x' )c++
        }
-       if ( c === 9 )if(gameResult === "")setGameResult("Game Draw!, Play Again")}
+       console.log(c)
+       if ( c === 9 )if(gameResult === "just click on your best box !")setGameResult("Game Draw!, Play Again")
+       console.log(gameResult)
+    
+    }
     }
   
 
@@ -111,7 +114,8 @@ const Board = () => {
         divs[i].innerHTML = ""
        }
        setLock(false)
-       setGameResult("")
+       setGameResult("just click on your best box !")
+       
     //    console.log(data[0] + data[1] + data[2])
       
        
