@@ -3,7 +3,11 @@ body{
   font-weight: 400;
   font-style: normal;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 nav{
    
    /* width:100vw; */
@@ -25,10 +29,10 @@ nav{
 #body{
   background: url("https://media.istockphoto.com/id/91621630/photo/tic-tac-toe-game.jpg?s=612x612&w=0&k=20&c=KYxukGul6TXNbsTCKZW-TBWH5FmAPyQA0t3wKi5iC1I=")  ;
   ;
-  width:100vw;
-  height:70vh;
+  /* width:100vw;
+  height:100vh; */
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   /* position: relative; */
   z-index: 0;
@@ -127,6 +131,7 @@ nav{
   display: flex;
   align-items: center;
   justify-content: center;
+  /* border-radius: 10px; */
 }
 #board-right{
    display: flex;
@@ -147,7 +152,7 @@ img{
 #main-body{
   padding:0;
   margin: 0;
-  width:98vw;
+  width:100vw;
   height:100vh;
   background-color: black;
 }
@@ -163,6 +168,7 @@ img{
   color: white;
   border: none;
   cursor:pointer;
+ 
   /* margin-top: 70px;
    */
    top:220px;
@@ -233,4 +239,35 @@ img{
   height:40px;
   margin-left:10px;
   margin-right:10px;
+}
+
+@media screen and (max-width:400px){
+  #board-left{
+    position: absolute;
+    top:50vh;
+  }
+  #board-right{
+    display: flex;
+    flex-direction: row;
+    left:3vw;
+    top:13vh;
+    /* justify-content: space-around; */
+    align-items: center;
+    width:90%;
+    height:80%;
+    background-color: black;
+    position: absolute;
+  }
+}
+.social{
+  float:right;
+  display: flex;
+  align-items: center;
+ 
+  
+}
+.social a{
+
+  margin-right: 7px;
+  /* background-image: linear-gradient(45deg, blue, rgb(240, 4, 67)); */
 }
