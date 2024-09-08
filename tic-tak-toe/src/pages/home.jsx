@@ -1,5 +1,5 @@
 
-import Board from './board'
+import Board from '../components/board.jsx'
 const Home = () => {
   return (
     <div id="body">
